@@ -1,0 +1,50 @@
+name: Convert slides.md to PDF (Pandoc + Beamer)
+
+on:
+  push:
+    paths:
+      - '**/slides.md'
+  pull_request:
+    paths:
+      - '**/slides.md'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and TeX Live (needed for Beamer)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc \
+            texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-xetex lmodern
+
+      - name: Convert all slides.md to slides.pdf using Beamer
+        run: |
+          set -euo pipefail
+          found=0
+          # Find every slides.md and convert to slides.pdf next to it
+          while IFS= read -r -d '' md; do
+            found=1
+            out="${md%.*}.pdf"
+            echo "Converting: $md -> $out"
+            # Try xelatex first (better font support), fallback to pdflatex
+            if ! pandoc "$md" -t beamer -V theme:Madrid -V colortheme:seagull --pdf-engine=xelatex -o "$out"; then
+              echo "xelatex failed, trying pdflatex"
+              pandoc "$md" -t beamer --pdf-engine=pdflatex -o "$out"
+            fi
+          done < <(find . -type f -name 'slides.md' -print0)
+          if [ "$found" -eq 0 ]; then
+            echo "No slides.md files found."
+          fi
+
+      - name: Upload generated PDFs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-pdfs
+          path: |
+            **/slides.pdf
