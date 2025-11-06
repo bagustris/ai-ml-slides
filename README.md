@@ -28,10 +28,11 @@ The repository includes slides and accompanying images for the following topics:
 
 ## Using the Slides
 
-The slides are written in Markdown format and can be converted to presentation formats using tools like:
-- [Marp](https://marp.app/)
-- [Pandoc](https://pandoc.org/) with beamer
-- [reveal.js](https://revealjs.com/)
+The slides are written in Markdown format and can be converted to presentation formats using [Pandoc](https://pandoc.org/) with beamer:
+
+```bash
+pandoc slides.md -t beamer -o slides.pdf
+```
 
 ## Attribution
 

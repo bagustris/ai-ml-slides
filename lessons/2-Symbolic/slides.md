@@ -43,7 +43,7 @@ colortheme: default
 
 # The DIKW Pyramid
 
-<img src="images/DIKW_Pyramid.png" width="50%"/>
+![DIKW Pyramid](images/DIKW_Pyramid.png){width=40%}
 
 **Four Levels of Understanding:**
 
@@ -58,7 +58,7 @@ colortheme: default
 
 # Knowledge Representation Spectrum
 
-![Knowledge representation spectrum](images/knowledge-spectrum.png)
+![Knowledge representation spectrum](images/knowledge-spectrum.png){width=90%}
 
 **The Challenge:**
 
@@ -69,7 +69,7 @@ colortheme: default
   - Most powerful
   - Cannot be used for automatic reasoning
 
-> Image by [Dmitry Soshnikov](http://soshnikov.com)
+<!-- > Image by [Dmitry Soshnikov](http://soshnikov.com) -->
 
 ---
 
@@ -114,6 +114,7 @@ Based on semantic networks (graphs of interrelated concepts)
 | Block Syntax | Indent | | |
 
 **Features:**
+
 - Objects/classes as frames with slots
 - Default values and restrictions
 - Hierarchical organization
@@ -131,7 +132,8 @@ OR high C-reactive protein
 THEN patient has inflammation
 ```
 
-**Key Points:**
+**Key Points:**  
+
 - Condition-action pairs
 - Enable drawing conclusions
 - Used for forward reasoning
@@ -161,6 +163,7 @@ Originally proposed by Aristotle for universal knowledge
 ![Human Architecture](images/arch-human.png){width=45%} ![Knowledge-Based System](images/arch-kbs.png){width=45%}
 
 **Definition:**
+
 - Computer systems acting as domain experts
 - Based on extracted human expertise
 - Contain inference engine for reasoning
@@ -242,11 +245,13 @@ THEN animal is a carnivore
 **Two Main Approaches:**
 
 1. **Direct Programming**
+
    - Not recommended
    - Knowledge not separated from inference
    - Hard for domain experts to maintain
 
 2. **Expert Systems Shell**
+
    - Specialized system for knowledge
    - Uses knowledge representation language
    - Separates knowledge from reasoning
@@ -257,21 +262,25 @@ THEN animal is a carnivore
 # Ontologies and Semantic Web
 
 **Initiative (Late 20th Century):**
+
 - Annotate Internet resources with knowledge
 - Enable specific, intelligent queries
 
 **Based on Three Concepts:**
 
 1. **Description Logics (DL)**
+
    - Similar to frame representation
    - Formal logical semantics
    - Balance expressiveness vs. complexity
 
 2. **Distributed Representation**
+
    - Global URI identifiers
    - Knowledge spans the internet
 
 3. **XML-Based Languages**
+
    - RDF (Resource Description Framework)
    - RDFS (RDF Schema)
    - OWL (Ontology Web Language)
@@ -281,10 +290,12 @@ THEN animal is a carnivore
 # What is an Ontology?
 
 **Definition:**
+
 - Explicit specification of a problem domain
 - Uses formal knowledge representation
 
 **Complexity Levels:**
+
 - Simple: Just hierarchy of objects
 - Complex: Include inference rules
 
@@ -309,6 +320,7 @@ http://github.com/microsoft/ai-for-beginners
 ```
 
 **Key Features:**
+
 - Objects and relations identified by URI
 - Universally accepted concept identifiers
 
@@ -319,6 +331,7 @@ http://github.com/microsoft/ai-for-beginners
 <img src="images/triplet-complex.png" width="50%"/>
 
 **For Multiple Creators:**
+
 - Use RDF data structures
 - Define lists and collections
 - Maintain relationship integrity
@@ -329,13 +342,14 @@ http://github.com/microsoft/ai-for-beginners
 
 # Notable Projects
 
-**WikiData**
+**WikiData**]
 - Machine-readable knowledge bases
 - Associated with Wikipedia
 - Mined from InfoBoxes
 - Query using SPARQL
 
 **Example Query:** Most popular human eye colors
+
 ```sparql
 #defaultView:BubbleChart
 SELECT ?eyeColorLabel (COUNT(?human) AS ?count)
@@ -356,6 +370,7 @@ GROUP BY ?eyeColorLabel
 <img src="images/protege.png" width="80%"/>
 
 **Visual Ontology Editor**
+
 - Download or use online
 - Create and edit ontologies
 - Visualize knowledge hierarchies
@@ -367,17 +382,20 @@ GROUP BY ?eyeColorLabel
 # Microsoft Concept Graph
 
 **Overview:**
+
 - Mines ontologies from unstructured data
 - Natural language text processing
 - Large entity collection
 
 **Features:**
+
 - `is-a` inheritance relationships
 - Probabilistic answers
   - "Microsoft" -> "company" (0.87 probability)
   - "Microsoft" -> "brand" (0.75 probability)
 
 **Access:**
+
 - REST API
 - Downloadable text file
 
@@ -388,18 +406,22 @@ GROUP BY ?eyeColorLabel
 **Use Cases for Symbolic AI:**
 
 1. **Medical Diagnosis**
+
    - Expert systems in healthcare
    - Explainable decision-making
 
 2. **Knowledge Management**
+
    - Semantic web applications
    - Intelligent search
 
 3. **Business Rules**
+
    - Automated decision systems
    - Compliance checking
 
 4. **Educational Systems**
+
    - Intelligent tutoring
    - Concept mapping
 
@@ -438,6 +460,7 @@ GROUP BY ?eyeColorLabel
   - Tasks requiring justification
 
 **Current Status:**
+
 - Neural networks don't handle explicit reasoning
 - Real-world projects still use symbolic approaches
 - Hybrid approaches gaining popularity
@@ -447,11 +470,13 @@ GROUP BY ?eyeColorLabel
 # Challenge & Review
 
 **Challenge:**
+
 - Experiment with Family Ontology notebook
 - Discover new connections in family trees
 - Try different family relations
 
 **Review Topics:**
+
 - Bloom's Taxonomy
 - Linnaeus: taxonomy of organisms
 - Mendeleev: periodic table organization
@@ -477,6 +502,7 @@ GROUP BY ?eyeColorLabel
 **Questions?**
 
 Continue exploring:
+
 - Protégé ontology editor
 - WikiData SPARQL queries
 - Microsoft Concept Graph

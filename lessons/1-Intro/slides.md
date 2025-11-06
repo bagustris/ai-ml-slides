@@ -45,7 +45,7 @@ colortheme: default
 - Connected to abstract thinking and self-awareness
 - Difficult to measure objectively
 
-![Photo of a Cat](images/photo-cat.jpg)
+![Photo of a Cat](images/photo-cat.jpg){width=30%}
 
 > Question: Is a cat intelligent? Different people give different answers!
 
@@ -59,22 +59,25 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Human interrogator conducts text-based dialogue
 - If interrogator cannot distinguish machine from human, system is considered intelligent
 
-**Eugene Goostman** (2014):
-- Convinced 30% of judges it was human
-- Posed as 13-year-old Ukrainian boy
-- Demonstrated cleverness, not true intelligence
+**Eugene Goostman** (2014):  
+
+- Convinced 30% of judges it was human  
+- Posed as 13-year-old Ukrainian boy  
+- Demonstrated cleverness, not true intelligence  
 
 ---
 
 # Two Main Approaches to AI
 
 ## Top-down Approach (Symbolic Reasoning)
+
 - Models human reasoning processes
 - Extracts knowledge from experts
 - Represents knowledge in computer-readable form
 - Uses explicit rules and logic
 
 ## Bottom-up Approach (Neural Networks)
+
 - Models structure of human brain
 - Uses interconnected neurons
 - Learns from training data
@@ -85,10 +88,12 @@ Proposed by Alan Turing as a test for machine intelligence:
 # Other Approaches
 
 **Emergent/Synergetic Approach:**
+
 - Complex behavior from simple agent interactions
 - Intelligence emerges from reactive behaviors
 
 **Evolutionary Approach:**
+
 - Optimization based on evolution principles
 - Genetic algorithms
 
@@ -105,17 +110,29 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 ---
 
+# Brief History of AI
+
+- **1950s-1960s:** Birth of AI, symbolic reasoning dominates
+- **1970s:** AI Winter - expert systems too expensive
+- **2010s:** Neural networks rise with big data
+- **Today:** AI mostly synonymous with neural networks
+
+---
+
 # Evolution: Chess Programs
 
 **Early Programs:**
+
 - Search-based algorithms
 - Alpha-beta pruning
 
 **Middle Era:**
+
 - Case-based reasoning
 - Learning from human matches
 
 **Modern Programs:**
+
 - Neural networks
 - Reinforcement learning
 - Self-play and learning from mistakes
@@ -141,6 +158,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 **2012:** Convolutional Neural Networks revolutionize image classification
 
 **ImageNet Challenge:**
+
 - Error rates dropped from 30% to 16.4%
 - 2015: Human-level accuracy achieved
 
@@ -173,10 +191,12 @@ Proposed by Alan Turing as a test for machine intelligence:
 # Challenge & Review
 
 **Challenge:**
+
 - Research where AI is most effectively used
 - Investigate how these systems were built
 
 **Review:**
+
 - Explore the history of AI and ML
 - Research cultural context of AI evolution
 - Complete the Game Jam assignment

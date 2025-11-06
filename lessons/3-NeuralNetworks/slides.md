@@ -35,7 +35,8 @@ colortheme: default
 - Large part of Artificial Intelligence
 - Classical ML not covered in this curriculum
 
-> Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-beginners)** curriculum to learn more about classic Machine Learning
+
+Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-beginners)** curriculum to learn more about classic Machine Learning
 
 ---
 
@@ -201,11 +202,9 @@ Y = f(sum of Xi * Wi for all i)
 
 **Hands-on Practice:**
 
-- Build your own framework
+- Code MLP Using SciKit-Learn for diabetes dataset
 - Understand backpropagation
 - See how training works internally
-
-**Notebook:** OwnFramework.ipynb
 
 ---
 
@@ -213,13 +212,15 @@ Y = f(sum of Xi * Wi for all i)
 
 **Modern Tools:**
 
-**PyTorch**
+**PyTorch**  
+
 - Dynamic computational graphs
 - Research-friendly
 - Python-first approach
 - Notebook: IntroPyTorch.ipynb
 
 **Keras/TensorFlow**
+
 - High-level API
 - Production-ready
 - Easy to use
@@ -259,7 +260,7 @@ Y = f(sum of Xi * Wi for all i)
 
 # Overfitting Diagram
 
-![Overfitting Illustration](images/Overfitting.png)
+![Overfitting Illustration](images/Overfitting.png){.center}\
 
 **Three Scenarios:**
 
@@ -272,11 +273,13 @@ Y = f(sum of Xi * Wi for all i)
 # Key Concepts Summary
 
 **Neural Networks:**
+
 - Mathematical models inspired by the brain
 - Consist of interconnected artificial neurons
 - Learn from data through training
 
 **Core Components:**
+
 - Inputs with weights
 - Activation functions
 - Multiple layers
@@ -477,7 +480,8 @@ Y = f(sum of Xi * Wi for all i)
 4. Practice on real datasets
 5. Explore advanced architectures
 
-**Remember:**
+**Remember:** 
+
 - Practice is key to understanding
 - Start simple, then increase complexity
 - Experiment and learn from failures
@@ -489,6 +493,7 @@ Y = f(sum of Xi * Wi for all i)
 **Questions?**
 
 **Let's dive into:**
+
 - Perceptron implementation
 - Building neural networks
 - Using modern frameworks
@@ -514,6 +519,7 @@ Y = f(sum of Xi * Wi for all i)
 - Triangles, squares, and circles
 
 **Input Representation:**
+
 - 20x20 photocell array
 - 400 inputs
 - One binary output
@@ -547,6 +553,7 @@ Images from Wikipedia
 > "The embryo of an electronic computer that [the Navy] expects will be able to walk, talk, see, write, reproduce itself and be conscious of its existence."
 
 **Reality vs. Expectations:**
+
 - Revolutionary for its time
 - But had significant limitations
 - Led to "AI Winter" in 1969
@@ -563,24 +570,36 @@ Images from Wikipedia
 
 **Output Formula:**
 
-y(x) = f(w^T x)
+$$ y(x) = f(w^T x) $$
 
-where f is a step activation function
+where $f$ is a step activation function
 
 ---
 
 # Step Activation Function
 
-![Activation Function](03-Perceptron/images/activation-func.png)
+**Function Definition:**
+
+$$
+f(x) = \begin{cases}
++1 & \text{if } x \geq 0 \\
+-1 & \text{if } x < 0
+\end{cases}
+$$
+
+**Characteristics:**
+
+- Binary output
+- Sharp threshold at zero
+- Non-differentiable (causes training challenges)
 
 **Function Definition:**
 
-```
-f(x) = +1  if x >= 0
-f(x) = -1  if x < 0
-```
+$$ f(x) = +1  if x >= 0 $$
+$$ f(x) = -1  if x < 0 $$
 
 **Characteristics:**
+
 - Binary output
 - Sharp threshold at zero
 - Non-differentiable (causes training challenges)
@@ -595,12 +614,12 @@ f(x) = -1  if x < 0
 
 **Perceptron Criterion:**
 
-E(w) = -sum(w^T x_i t_i)
+$$E(w) = -sum(w^T x_i t_i) $$
 
 where:
 - Sum taken on misclassified training points
-- x_i = input data
-- t_i = -1 or +1 (target labels)
+- $x_i$ = input data
+- $t_i$ = -1 or +1 (target labels)
 
 ---
 
@@ -608,19 +627,20 @@ where:
 
 **Optimization Method:**
 
-Start with initial weights w^(0)
+Start with initial weights $w^(0)$
 
 Update at each step:
 
-w^(t+1) = w^(t) - eta * gradient(E(w))
+$$w^{(t+1)} = w^(t) - \eta * \nabla E(w)$$
 
 where:
-- eta = learning rate
-- gradient(E(w)) = gradient of error
+
+- $\eta$ = learning rate
+- $\nabla E(w)$ = gradient of error
 
 **Final Update Rule:**
 
-w^(t+1) = w^(t) + sum(eta * x_i * t_i)
+$$w^{(t+1)} = w^(t) + sum(\eta * x_i * t_i)$$
 
 ---
 
@@ -634,6 +654,7 @@ w^(t+1) = w^(t) + sum(eta * x_i * t_i)
 - **Iteration:** Repeat until convergence
 
 **Process:**
+
 1. Initialize weights
 2. Compute output
 3. Calculate error
@@ -673,7 +694,7 @@ def train(positive_examples, negative_examples,
 
 1. **Initialize:** Random or zero weights
 2. **Select Samples:** Pick positive and negative examples
-3. **Compute Output:** Calculate z = w^T x
+3. **Compute Output:** Calculate $z = w^T x$
 4. **Check Classification:**
    - If positive classified as negative: increase weights
    - If negative classified as positive: decrease weights
@@ -706,11 +727,13 @@ def train(positive_examples, negative_examples,
 **Discovered by Minsky & Papert (1969):**
 
 **Cannot solve XOR problem:**
+
 - Non-linearly separable data
 - Need multiple layers
 - Led to first "AI Winter"
 
 **Other Limitations:**
+
 - Only linear decision boundaries
 - Sensitive to outliers
 - No probabilistic outputs
@@ -746,6 +769,7 @@ def train(positive_examples, negative_examples,
 - Simple geometric shapes
 
 **Advantages:**
+
 - Fast training
 - Simple to implement
 - Interpretable weights
@@ -776,6 +800,7 @@ def train(positive_examples, negative_examples,
 - Can solve XOR and complex problems
 
 **Architecture:**
+
 - Input layer
 - One or more hidden layers
 - Output layer
@@ -805,11 +830,13 @@ def train(positive_examples, negative_examples,
 **Available Resources:**
 
 1. **Perceptron.ipynb**
+
    - Implement from scratch
    - Toy problem solutions
    - Real-life applications
 
 2. **Lab Assignment:**
+
    - Multi-class digit classification
    - Extend binary to 10 classes
    - PerceptronMultiClass.ipynb
@@ -819,16 +846,19 @@ def train(positive_examples, negative_examples,
 # Lab Assignment Details
 
 **Task:**
+
 - Binary classification -> Multi-class classification
 - Classify handwritten digits (0-9)
 - Use perceptron approach
 
 **Challenges:**
+
 - 10 classes instead of 2
 - Multiple decision boundaries
 - Performance evaluation
 
 **Skills Learned:**
+
 - One-vs-all strategy
 - Multi-class extensions
 - Model evaluation metrics
@@ -881,8 +911,8 @@ def train(positive_examples, negative_examples,
 
 **Improving Performance:**
 
-- **Polynomial Features:** x, x^2, x^3
-- **Interaction Terms:** x1 * x2
+- **Polynomial Features:** $x$, $x^2$, $x^3$
+- **Interaction Terms:** $x_1 \cdot x_2$
 - **Normalization:** Scale features
 - **Domain Knowledge:** Create relevant features
 
@@ -900,6 +930,7 @@ def train(positive_examples, negative_examples,
 4. **Feature Space:** 2D/3D projections
 
 **Tools:**
+
 - Matplotlib for plotting
 - Seaborn for visualization
 - Interactive plots with Plotly
@@ -911,11 +942,13 @@ def train(positive_examples, negative_examples,
 **Theoretical Guarantee:**
 
 If data is linearly separable:
+
 - Perceptron will converge
 - Finite number of iterations
 - Find perfect separator
 
 **Conditions:**
+
 - Data must be linearly separable
 - Finite dataset
 - Proper learning rate
@@ -943,11 +976,13 @@ If data is linearly separable:
 # Resources for Practice
 
 **Microsoft Learn Lab:**
+
 - Build perceptron with Azure ML
 - Two-class averaged perceptron
 - Azure ML Designer interface
 
 **Additional Reading:**
+
 - "What is a Perceptron: Basics of Neural Networks"
 - Towards Data Science articles
 - Original Rosenblatt papers
@@ -964,6 +999,7 @@ If data is linearly separable:
 - Simple yet powerful concept
 
 **Next Steps:**
+
 - Multi-layer networks
 - Backpropagation
 - Modern frameworks (PyTorch, TensorFlow)
@@ -980,6 +1016,7 @@ If data is linearly separable:
 4. Build intuition for complex models
 
 **Remember:**
+
 - Every deep network is built on these principles
 - Simple models teach important lessons
 - Start simple, scale complexity gradually
@@ -991,11 +1028,13 @@ If data is linearly separable:
 **Questions?**
 
 **Practice Materials:**
+
 - Perceptron.ipynb notebook
 - Lab assignment
 - Multi-class classification
 
 **Next Topics:**
+
 - Multi-layer perceptrons
 - Backpropagation algorithm
 - Deep neural networks
