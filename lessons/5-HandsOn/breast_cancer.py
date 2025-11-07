@@ -11,12 +11,18 @@ from sklearn.naive_bayes import GaussianNB
 
 data = load_breast_cancer()
 
-# Exploring the dataset with Pandas
+# 1. Exploring the dataset with Pandas
 df=pd.DataFrame(data.data,columns=data.feature_names)
-df.sample(5)
 
-df.info()
-df.describe()
+# print first 4 samples
+print("First 5 samples of data:")
+print(df.sample(5))
+
+print("Info of data:")
+print(df.info())
+
+print("Statistics of data:")
+print(df.describe())
 
 # Analyze data.target to understand the distribution of malignant and benign cases as class imbalance can affect model performance.
 df2=pd.DataFrame(data.target,columns=['target'])
