@@ -36,6 +36,12 @@ Topics covered:
 - The Perceptron
 - Activation Functions
 
+### 4. AI for Healthcare and Wellbeing
+
+### 5. Hands-on AI Projects
+
+- 
+
 ## Image Assets
 
 - **images/** - Lesson-specific images and diagrams
@@ -45,24 +51,20 @@ Topics covered:
 
 These Markdown slides can be converted to various presentation formats:
 
-### Using Marp
-```bash
-# Install Marp CLI
-npm install -g @marp-team/marp-cli
+### Quiz
 
-# Convert to PDF
-marp lessons/1-Intro/slides.md -o output.pdf
+Quiz 1
+Quiz 2
 
-# Convert to HTML
-marp lessons/1-Intro/slides.md -o output.html
-```
 
 ### Using Pandoc with Beamer
 ```bash
 pandoc lessons/1-Intro/slides.md -t beamer -o output.pdf
 ```
 
-### Using reveal.js
-```bash
-pandoc lessons/1-Intro/slides.md -t revealjs -s -o output.html
-```
+### Course list reference:  
+1. Basic Math
+2. Basic Python
+3. AI for beginners
+4. ML for begineers
+
