@@ -442,6 +442,12 @@ THEN animal is a carnivore
 
 ---
 
+# Machine Learning Tree
+
+![](./lessons/1-Intro/images/machine-learning-algorithm-cheat-sheet.png)
+
+---
+
 # Machine Learning Fundamentals
 
 **Basic Setup:**
@@ -476,6 +482,10 @@ THEN animal is a carnivore
 - Example: Forecast temperature
 
 **Our Focus:** Neural network models for both problems
+
+# Regression  
+
+![](./lessons/3-NeuralNetworks/images/ml-regression.png)
 
 ---
 

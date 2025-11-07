@@ -36,9 +36,19 @@ Topics covered:
 - The Perceptron
 - Activation Functions
 
-### 4. AI for Healthcare and Wellbeing
+### 4. AI for Healthcare and Wellbeing 
+- Walkthrough of Audio-based AI for healthcare and wellbeing  
 
-### 5. Hands-on AI Projects
+
+### 5. Hands-on AI Projects  
+
+- Breast Cancer Classification
+- Regression with Diabetes Data
+- Emotion Recognition
+- Laughter (Happy/Evil) Classication  
+- Dementia prediction
+
+
 
 - 
 
