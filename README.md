@@ -1,10 +1,10 @@
 # AI-ML Slides
 
-This repository contains presentation slides extracted from the [AI-For-Beginners](https://github.com/bagustris/AI-For-Beginners) repository, forked from [Microsoft's original repository](https://github.com/microsoft/AI-For-Beginners).
+This repository contains presentation slides extracted from the [AI-For-Beginners](https://github.com/bagustris/AI-For-Beginners), ML-For-Beginners, and other repositories, forked from [Microsoft's original repository](https://github.com/microsoft/AI-For-Beginners).
 
 ## Purpose
 
-This repository is designed as a companion to the main AI-For-Beginners repository, providing clean slide decks that can be used for teaching and presentations. The main repository contains comprehensive course materials, while this repository focuses specifically on the slide presentations.
+This repository is designed as a companion to the main AI-For-Beginners repository, providing clean slide decks that can be used for teaching and presentations. The main repository contains comprehensive course materials, while this repository focuses specifically on the slide presentations. Although the main use case is for medical application, it can be applied to other domains.
 
 ## Content
 
@@ -26,6 +26,10 @@ The repository includes slides and accompanying images for the following topics:
   - Perceptron
   - Overfitting and Regularization
 
+- **Lesson 4: AI for Healthcare and Wellbeing**
+
+- **Lesson 5: Hands On**  
+
 ## Using the Slides
 
 The slides are written in Markdown format and can be converted to presentation formats using [Pandoc](https://pandoc.org/) with beamer:
@@ -41,3 +45,10 @@ These materials are derived from the AI-For-Beginners course. The sketchnotes ar
 ## License
 
 This repository maintains the same license as the original AI-For-Beginners repository.
+
+## Reading List:  
+
+1. [Basic of Math](https://github.com/bagustris/matematika)
+1. [Basic of (Python) Programming](https://bagustris.github.io/python-tutorial/)
+1. [ML for beginners](https://github.com/microsoft/AI-For-Beginners)
+1. [AI for beginners](https://github.com/microsoft/ML-For-Beginners)
