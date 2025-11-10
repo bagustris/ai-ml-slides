@@ -34,7 +34,7 @@ shap_values = ex.shap_values(X_test)
 shap.summary_plot(shap_values, X_test)
 
 # plot the SHAP values for a single feature (bmi)
-shap.dependence_plot("bmi", shap_values, X_test)
+# shap.dependence_plot("bmi", shap_values, X_test)
 
 # force plot for the whole test set
 shap.force_plot(ex.expected_value, shap_values, X_test)

@@ -13,7 +13,7 @@ print("First Sample: ")
 print(X[0])
 
 # 2. Selecting the x-rd feature
-X = X[:, 9]
+X = X[:, 2]
 print("Shape of feature (old, 1D):")
 print(X.shape)
 

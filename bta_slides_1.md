@@ -478,7 +478,7 @@ THEN animal is a carnivore
 - Example: Predict house prices
 - Example: Forecast temperature
 
-**Our Focus:** Neural network models for both problems
+**Our Focus:** ML and Neural network models for both problems
 
 # Regression  
 
@@ -1289,18 +1289,19 @@ If data is linearly separable:
 
 **Part 1 AI:**
 
-- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/1)[https://ff-quizzes.netlify.app/en/ai/quiz/1]
-- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/2)[https://ff-quizzes.netlify.app/en/ai/quiz/2]
+- Pre-lecture quiz: <https://ff-quizzes.netlify.app/en/ai/quiz/1>
+- Post-lecture quiz: <https://ff-quizzes.netlify.app/en/ai/quiz/2>
+
 
 
 **Part 2 Perceptron:**
 
-- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/3)[https://ff-quizzes.netlify.app/en/ai/quiz/3]
-- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/4)[https://ff-quizzes.netlify.app/en/ai/quiz/4]  
+- Pre-lecture quiz: <https://ff-quizzes.netlify.app/en/ai/quiz/3>
+- Post-lecture quiz: <https://ff-quizzes.netlify.app/en/ai/quiz/4>  
 
 **ML Resources:**
 
-- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ml/quiz/7)[https://ff-quizzes.netlify.app/en/ml/quiz/7]
-- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ml/quiz/8)[https://ff-quizzes.netlify.app/en/ml/quiz/8]
-- Lectures:  https://github.com/microsoft/ML-For-Beginners/
+- Pre-lecture quiz: <https://ff-quizzes.netlify.app/en/ml/quiz/7>
+- Post-lecture quiz: <https://ff-quizzes.netlify.app/en/ml/quiz/8>
+
 ---

@@ -35,7 +35,7 @@ plt.pie(class_counts, labels=class_counts.index, autopct='%1.2f%%', colors=['red
 X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, test_size=0.33, random_state=42)
 
 # Train the Gaussian Naive Bayes model
-model = GaussianNB()
+model = GaussianNB() # ganti model yang lain: MLP, SVC, DecisionTree, RandomForest, dll
 model.fit(X_train, y_train)
 
 # Make predictions
@@ -44,3 +44,5 @@ y_pred = model.predict(X_test)
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy * 100:.2f}%")
+
+#
