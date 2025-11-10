@@ -45,9 +45,8 @@ We cannot explicitly explain how we determine age, nor can we program a computer
 - Connected to abstract thinking and self-awareness
 - Difficult to measure objectively
 
-![](lessons/1-Intro/images/photo-cat.jpg){width=30%}\
-
-Question: Is a cat intelligent? Different people give different answers!
+![Is a cat intelligent? Different people give different answers!
+](lessons/1-Intro/images/photo-cat.jpg){width=30%}
 
 ---
 
@@ -141,12 +140,10 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 # Evolution: Conversational AI
 
-![The Turing test's evolution](lessons/1-Intro/images/turing-test-evol.png)
+![The Turing test's evolution](lessons/1-Intro/images/turing-test-evol.png){.center}\
 
-**Early:** ELIZA - simple grammatical rules
-
-**Current:** Cortana, Siri, Google Assistant - hybrid systems
-
+**Early:** ELIZA - simple grammatical rules  
+**Current:** Cortana, Siri, Google Assistant - hybrid systems  
 **Future:** Complete neural-based models (GPT, Turing-NLG)
 
 ---
@@ -1291,19 +1288,18 @@ If data is linearly separable:
 
 **Part 1 AI:**
 
-- Pre-lecture quiz: https://ff-quizzes.netlify.app/en/ai/quiz/1
-- Post-lecture quiz: https://ff-quizzes.netlify.app/en/ai/quiz/2
+- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/1)[https://ff-quizzes.netlify.app/en/ai/quiz/1]
+- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/2)[https://ff-quizzes.netlify.app/en/ai/quiz/2]
 
 
 **Part 2 Perceptron:**
 
-- Pre-lecture quiz: https://ff-quizzes.netlify.app/en/ai/quiz/3  
-- Post-lecture quiz: https://ff-quizzes.netlify.app/en/ai/quiz/4  
+- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/3)[https://ff-quizzes.netlify.app/en/ai/quiz/3]
+- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ai/quiz/4)[https://ff-quizzes.netlify.app/en/ai/quiz/4]  
 
 **ML Resources:**
 
+- Pre-lecture quiz: (https://ff-quizzes.netlify.app/en/ml/quiz/7)[https://ff-quizzes.netlify.app/en/ml/quiz/7]
+- Post-lecture quiz: (https://ff-quizzes.netlify.app/en/ml/quiz/8)[https://ff-quizzes.netlify.app/en/ml/quiz/8]
 - Lectures:  https://github.com/microsoft/ML-For-Beginners/
-- Pre-lecture quiz: https://ff-quizzes.netlify.app/en/ml/quiz/7
-- Post-lecture quiz: https://ff-quizzes.netlify.app/en/ml/quiz/8
-
 ---

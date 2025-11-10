@@ -39,3 +39,5 @@ shap.dependence_plot("bmi", shap_values, X_test)
 # force plot for the whole test set
 shap.force_plot(ex.expected_value, shap_values, X_test)
 
+# Challenge: try using a different models and see how the explanations differ!
+# For example, try a decision tree, random forest, or NN.
