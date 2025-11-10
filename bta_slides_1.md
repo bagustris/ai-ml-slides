@@ -912,9 +912,10 @@ $$
 
 # Training the Perceptron
 
-**Goal:** Find weights vector w that:
+**Goal:** Find weights vector $w$ that:
+
 - Classifies most values correctly
-- Results in smallest error
+- Results in the smallest error
 
 **Perceptron Criterion:**
 
