@@ -10,12 +10,20 @@ colortheme: default
 ![Summary of Intro Neural Networks content](../sketchnotes/ai-neuralnetworks.png)
 
 ---
+
 # AI, ML, and DL
+
 ![Summary of AI, ML, and DL content](images/ai_ml_dl.png)
+
 Source: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide 
 
+---
+
 # The Craft of Creating AI/ML/DL
+
 ![Summary of the craft of creating machine learning content](images/crafting_ml.png)
+
+---
 
 # What are Neural Networks?
 
@@ -341,28 +349,6 @@ Y = f(sum of Xi * Wi for all i)
 - NumPy, Matplotlib
 
 ---
-
-# Hands-On Practice
-
-**Notebooks Available:**
-
-1. **OwnFramework.ipynb**
-   - Build neural network from scratch
-   - Understand backpropagation
-   - Implement gradient descent
-
-2. **IntroPyTorch.ipynb**
-   - PyTorch basics
-   - Build models with PyTorch
-   - Training and evaluation
-
-3. **IntroKerasTF.ipynb**
-   - Keras/TensorFlow basics
-   - Sequential and Functional APIs
-   - Model deployment
-
----
-
 # From Perceptron to Deep Learning
 
 **Evolution of Neural Networks:**
@@ -831,46 +817,6 @@ def train(positive_examples, negative_examples,
 
 ---
 
-# Hands-On Practice
-
-**Available Resources:**
-
-1. **Perceptron.ipynb**
-
-   - Implement from scratch
-   - Toy problem solutions
-   - Real-life applications
-
-2. **Lab Assignment:**
-
-   - Multi-class digit classification
-   - Extend binary to 10 classes
-   - PerceptronMultiClass.ipynb
-
----
-
-# Lab Assignment Details
-
-**Task:**
-
-- Binary classification -> Multi-class classification
-- Classify handwritten digits (0-9)
-- Use perceptron approach
-
-**Challenges:**
-
-- 10 classes instead of 2
-- Multiple decision boundaries
-- Performance evaluation
-
-**Skills Learned:**
-
-- One-vs-all strategy
-- Multi-class extensions
-- Model evaluation metrics
-
----
-
 # Perceptron vs. Modern Networks
 
 | Feature | Perceptron | Modern DNNs |
@@ -979,6 +925,109 @@ If data is linearly separable:
 
 ---
 
+# Hands-On Machine Learning Workflow
+
+**What the Hands-On Scripts Add:**
+
+- Load a real dataset
+- Choose features and labels
+- Split data into training and testing sets
+- Train a model with scikit-learn
+- Predict on unseen test data
+- Evaluate and visualize the result
+
+**Key Idea:** Practice the full ML loop, not only the model formula
+
+---
+
+# Train/Test Split and Reproducibility
+
+**Why split the data?**
+
+- Training set: used to fit the model
+- Test set: used to estimate performance on new data
+- Prevents evaluating only on examples the model already saw
+
+**Practical Details:**
+
+- `random_state` makes examples reproducible
+- `stratify` preserves class balance for classification
+- Test size controls how much data is held out
+
+---
+
+# Linear Regression: Diabetes Example
+
+**Regression Goal:**
+
+- Predict a continuous numerical value
+- Example: diabetes progression score
+
+**Model Idea:**
+
+$$\hat{y} = w x + b$$
+
+**What Students Practice:**
+
+- Select one feature for 2D visualization
+- Fit a linear model
+- Compare actual values and predictions
+- Interpret prediction error visually
+
+---
+
+# Classification: Breast Cancer Example
+
+**Classification Goal:**
+
+- Predict a discrete class label
+- Example: malignant or benign tumor
+
+**Gaussian Naive Bayes:**
+
+- Probabilistic classifier
+- Assumes features are conditionally independent
+- Models each feature distribution with a Gaussian curve
+- Fast baseline for small tabular datasets
+
+**Metric:** Accuracy = correct predictions / all predictions
+
+---
+
+# Explainable AI with SHAP
+
+**Why Explain Models?**
+
+- Accuracy alone does not explain a decision
+- Healthcare examples need interpretable reasoning
+- Explanations help check whether the model uses sensible features
+
+**SHAP Values:**
+
+- Estimate each feature's contribution to a prediction
+- Positive values push prediction higher
+- Negative values push prediction lower
+- Summary plots show global feature importance
+
+---
+
+# Hands-On Outputs
+
+**Generated Artifacts:**
+
+- Diabetes regression plot: `1_diabetes_1_plot.png`
+- Breast cancer class distribution plot
+- SHAP summary plot
+- SHAP dependence plot for BMI
+- SHAP force plots saved as HTML
+
+**Practical Note:**
+
+- Interactive backends display figures with `plt.show()`
+- Headless backends such as `Agg` save figures to files
+
+---
+
 # Resources for Practice
 
 **Microsoft Learn Lab:**
@@ -1027,22 +1076,5 @@ If data is linearly separable:
 - Simple models teach important lessons
 - Start simple, scale complexity gradually
 
----
-
-# Thank You!
-
-**Questions?**
-
-**Practice Materials:**
-
-- Perceptron.ipynb notebook
-- Lab assignment
-- Multi-class classification
-
-**Next Topics:**
-
-- Multi-layer perceptrons
-- Backpropagation algorithm
-- Deep neural networks
-
 **Continue Learning!**
+---

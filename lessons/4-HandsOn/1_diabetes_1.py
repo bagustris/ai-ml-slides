@@ -53,8 +53,4 @@ plt.xlabel("BMI (standardized)")
 plt.ylabel("Diabetes progression")
 plt.title("Linear regression using one diabetes feature")
 plt.legend()
-# show plot if in interactive environment; otherwise save to file for later viewing.
-if plt.isinteractive():
-    plt.show()
-else:
-    plt.savefig("1_diabetes_1_plot.png")
+plt.savefig("1_diabetes_1_plot.png")
