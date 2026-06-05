@@ -1,7 +1,8 @@
-# breast_cancer.py
+# 2_breast_cancer.py
 # Reference: https://www.geeksforgeeks.org/machine-learning/ml-cancer-cell-classification-using-scikit-learn/
 
 # 0. import library
+import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.datasets import load_breast_cancer
@@ -42,7 +43,7 @@ plt.pie(
     colors=["green", "red"],
 )
 plt.title("Breast cancer diagnosis distribution")
-plt.show()
+plt.savefig("2_breast_cancer_class_distribution.png")
 
 # Split dataset into training and testing sets
 # stratify keeps the malignant/benign ratio similar in both sets.

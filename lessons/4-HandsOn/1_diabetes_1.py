@@ -1,6 +1,7 @@
-# diabetes_1.py
+# 1_diabetes_1.py
 
 # 0. Load required packages/library
+from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets, linear_model, model_selection
@@ -52,4 +53,8 @@ plt.xlabel("BMI (standardized)")
 plt.ylabel("Diabetes progression")
 plt.title("Linear regression using one diabetes feature")
 plt.legend()
-plt.show()
+# show plot if in interactive environment; otherwise save to file for later viewing.
+if plt.isinteractive():
+    plt.show()
+else:
+    plt.savefig("1_diabetes_1_plot.png")

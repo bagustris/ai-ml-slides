@@ -1,8 +1,31 @@
 import time
+from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import shap
 from sklearn.model_selection import train_test_split
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+
+def finish_plot(filename):
+    """Save plots in headless mode, otherwise show them interactively."""
+    if plt.get_backend().lower() == "agg":
+        output_path = SCRIPT_DIR / filename
+        plt.savefig(output_path, dpi=150, bbox_inches="tight")
+        print(f"Saved plot to {output_path}")
+        plt.close()
+    else:
+        plt.show()
+
+
+def save_force_plot(filename, force_plot):
+    """Write SHAP force plots to HTML files for script-based runs."""
+    output_path = SCRIPT_DIR / filename
+    with output_path.open("w", encoding="utf-8") as html_file:
+        shap.save_html(html_file, force_plot)
+    print(f"Saved force plot to {output_path}")
 
 # X is a pandas DataFrame of diabetes features; y is the target progression score.
 X, y = shap.datasets.diabetes()
@@ -32,18 +55,22 @@ print_error(lin_regr.predict)
 # away from the model's average prediction.
 ex = shap.KernelExplainer(lin_regr.predict, X_train_summary)
 shap_values = ex.shap_values(X_test.iloc[0, :])
-shap.force_plot(ex.expected_value, shap_values, X_test.iloc[0, :])
+single_force_plot = shap.force_plot(ex.expected_value, shap_values, X_test.iloc[0, :])
+save_force_plot("3_diabetes_shap_1_force_single.html", single_force_plot)
 
 # Explain the model's predictions on the whole test set.
 shap_values = ex.shap_values(X_test)
-shap.summary_plot(shap_values, X_test)
+shap.summary_plot(shap_values, X_test, show=False)
+finish_plot("3_diabetes_shap_1_summary.png")
 
 # plot the SHAP values for a single feature (bmi)
-# shap.dependence_plot("bmi", shap_values, X_test)
+shap.dependence_plot("bmi", shap_values, X_test, show=False)
+finish_plot("3_diabetes_shap_1_bmi_dependence.png")
 
 # Force plot for the whole test set. In a notebook this renders inline; when
 # running as a script, save the returned HTML object if you need a shareable file.
 force_plot = shap.force_plot(ex.expected_value, shap_values, X_test)
+save_force_plot("3_diabetes_shap_1_force_all.html", force_plot)
 
 # Challenge: try using a different models and see how the explanations differ!
 # For example, try a decision tree, random forest, or NN.
