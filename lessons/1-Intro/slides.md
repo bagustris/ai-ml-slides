@@ -177,6 +177,15 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 ---
 
+
+# Knowledge Representation and Expert Systems
+
+![Summary of Symbolic AI content](../sketchnotes/ai-symbolic.png)
+
+> Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
+
+---
+
 # Key Takeaways
 
 1. AI aims to make computers exhibit intelligent behavior

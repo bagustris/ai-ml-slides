@@ -10,6 +10,12 @@ colortheme: default
 ![Summary of Intro Neural Networks content](../sketchnotes/ai-neuralnetworks.png)
 
 ---
+# AI, ML, and DL
+![Summary of AI, ML, and DL content](images/ai_ml_dl.png)
+Source: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide 
+
+# The Craft of Creating AI/ML/DL
+![Summary of the craft of creating machine learning content](images/crafting_ml.png)
 
 # What are Neural Networks?
 
