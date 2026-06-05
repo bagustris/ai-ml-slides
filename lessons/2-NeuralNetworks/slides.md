@@ -9,7 +9,7 @@ colortheme: default
 
 ![Summary of Intro Neural Networks content](../sketchnotes/ai-neuralnetworks.png)
 
----
+----
 
 # AI, ML, and DL
 
@@ -17,13 +17,13 @@ colortheme: default
 
 Source: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide 
 
----
+----
 
 # The Craft of Creating AI/ML/DL
 
 ![Summary of the craft of creating machine learning content](images/crafting_ml.png)
 
----
+----
 
 # What are Neural Networks?
 
@@ -39,7 +39,7 @@ Source: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learnin
 - We're talking about mathematical models  
 - Not real biological networks of neurons  
 
----
+----
 
 # Machine Learning Context
 
@@ -52,7 +52,7 @@ Source: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learnin
 
 Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-beginners)** curriculum to learn more about classic Machine Learning
 
----
+----
 
 # Machine Learning Fundamentals
 
@@ -70,7 +70,7 @@ Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-begi
   - N = number of features
 - Output labels Y: Vector of size M
 
----
+----
 
 # Two Main ML Problems
 
@@ -88,7 +88,7 @@ Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-begi
 
 **Our Focus:** Neural network models for both problems
 
----
+----
 
 # Biological Inspiration
 
@@ -102,7 +102,7 @@ Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-begi
   - Regulated by neurotransmitters
 - Both dendrites and axons conduct electrical signals
 
----
+----
 
 # Real vs. Artificial Neuron
 
@@ -112,7 +112,7 @@ Visit **[Machine Learning for Beginners](http://github.com/microsoft/ml-for-begi
 
 **Right:** Artificial Neuron (Simplified mathematical model)
 
----
+----
 
 # Mathematical Model of a Neuron
 
@@ -129,7 +129,7 @@ $$Y = f\left(\sum_{i=1}^{N} X_i \cdot W_i\right)$$
 
 Y = f(sum of Xi * Wi for all i)
 
----
+----
 
 # The Neuron Formula
 
@@ -144,7 +144,7 @@ Y = f(sum of Xi * Wi for all i)
 - Linear functions too simple for real-world problems
 - Biological neurons also non-linear
 
----
+----
 
 # Historical Foundation
 
@@ -161,7 +161,7 @@ Y = f(sum of Xi * Wi for all i)
 - Proposed how networks can be trained
 - **Hebbian Learning**: "Cells that fire together, wire together"
 
----
+----
 
 # Course Structure
 
@@ -175,7 +175,7 @@ Y = f(sum of Xi * Wi for all i)
    - Building our own framework
    - Understanding deep architecture
 
----
+----
 
 # Course Structure (continued)
 
@@ -191,7 +191,7 @@ Y = f(sum of Xi * Wi for all i)
    - Prevention techniques
    - Regularization methods
 
----
+----
 
 # Section 1: Perceptron
 
@@ -204,7 +204,7 @@ Y = f(sum of Xi * Wi for all i)
 
 **Learn more:** See Perceptron README
 
----
+----
 
 # Section 2: Multi-layered Networks
 
@@ -220,7 +220,7 @@ Y = f(sum of Xi * Wi for all i)
 - Understand backpropagation
 - See how training works internally
 
----
+----
 
 # Section 3: Neural Network Frameworks
 
@@ -240,7 +240,7 @@ Y = f(sum of Xi * Wi for all i)
 - Easy to use
 - Notebook: IntroKerasTF.ipynb
 
----
+----
 
 # Section 4: Overfitting
 
@@ -258,7 +258,7 @@ Y = f(sum of Xi * Wi for all i)
 - Data augmentation
 - Cross-validation
 
----
+----
 
 # Overfitting Visualization
 
@@ -270,7 +270,7 @@ Y = f(sum of Xi * Wi for all i)
 - Validation accuracy: Much lower
 - Model too complex for the data
 
----
+----
 
 # Overfitting Diagram
 
@@ -282,7 +282,7 @@ Y = f(sum of Xi * Wi for all i)
 - **Good fit**: Captures patterns, generalizes well
 - **Overfitting**: Too complex, captures noise
 
----
+----
 
 # Key Concepts Summary
 
@@ -299,7 +299,7 @@ Y = f(sum of Xi * Wi for all i)
 - Multiple layers
 - Backpropagation for training
 
----
+----
 
 # Learning Objectives
 
@@ -311,7 +311,7 @@ Y = f(sum of Xi * Wi for all i)
 4. Recognize and prevent overfitting
 5. Apply neural networks to real problems
 
----
+----
 
 # Why Neural Networks?
 
@@ -330,7 +330,7 @@ Y = f(sum of Xi * Wi for all i)
 - Game playing (AlphaGo)
 - Autonomous vehicles
 
----
+----
 
 # Getting Started
 
@@ -348,7 +348,7 @@ Y = f(sum of Xi * Wi for all i)
 - PyTorch or TensorFlow
 - NumPy, Matplotlib
 
----
+----
 # From Perceptron to Deep Learning
 
 **Evolution of Neural Networks:**
@@ -360,7 +360,7 @@ Y = f(sum of Xi * Wi for all i)
 - 2006: Deep Learning renaissance (Hinton)
 - 2012+: Modern deep learning era
 
----
+----
 
 # Training Neural Networks
 
@@ -373,7 +373,7 @@ Y = f(sum of Xi * Wi for all i)
 5. **Update weights**: Gradient descent
 6. **Repeat** until convergence
 
----
+----
 
 # Activation Functions
 
@@ -390,7 +390,7 @@ Y = f(sum of Xi * Wi for all i)
 - **Softmax**: For multi-class classification
   - Outputs probability distribution
 
----
+----
 
 # Neural Network Architectures
 
@@ -404,7 +404,7 @@ Y = f(sum of Xi * Wi for all i)
 
 **This Section:** Focus on feedforward networks
 
----
+----
 
 # Practical Considerations
 
@@ -422,7 +422,7 @@ Y = f(sum of Xi * Wi for all i)
 - Monitoring validation loss
 - Using callbacks
 
----
+----
 
 # Common Challenges
 
@@ -442,7 +442,7 @@ Y = f(sum of Xi * Wi for all i)
 - Learning rate scheduling
 - Early stopping
 
----
+----
 
 # Resources
 
@@ -460,7 +460,7 @@ Y = f(sum of Xi * Wi for all i)
 - Research papers
 - Online courses
 
----
+----
 
 # Next Steps
 
@@ -478,7 +478,7 @@ Y = f(sum of Xi * Wi for all i)
 - Start simple, then increase complexity
 - Experiment and learn from failures
 
----
+----
 
 # Thank You!
 
@@ -493,13 +493,13 @@ Y = f(sum of Xi * Wi for all i)
 
 **Next Lesson:** Perceptron - The Foundation of Neural Networks
 
----
+----
 
 # PART 2: The Perceptron
 
 **Introduction to Neural Networks: Perceptron**
 
----
+----
 
 # Historical Background
 
@@ -516,7 +516,7 @@ Y = f(sum of Xi * Wi for all i)
 - 400 inputs
 - One binary output
 
----
+----
 
 # The Mark-1 Perceptron
 
@@ -524,7 +524,7 @@ Y = f(sum of Xi * Wi for all i)
 
 Images from Wikipedia
 
----
+----
 
 # Mark-1 Architecture
 
@@ -536,7 +536,7 @@ Images from Wikipedia
 
 **Potentiometer:** Device allowing user to adjust circuit resistance
 
----
+----
 
 # Contemporary Expectations
 
@@ -550,7 +550,7 @@ Images from Wikipedia
 - But had significant limitations
 - Led to "AI Winter" in 1969
 
----
+----
 
 # Perceptron Model
 
@@ -566,7 +566,7 @@ $$ y(x) = f(w^T x) $$
 
 where $f$ is a step activation function
 
----
+----
 
 # Step Activation Function
 
@@ -596,7 +596,7 @@ $$ f(x) = -1  if x < 0 $$
 - Sharp threshold at zero
 - Non-differentiable (causes training challenges)
 
----
+----
 
 # Training the Perceptron
 
@@ -613,7 +613,7 @@ where:
 - $x_i$ = input data
 - $t_i$ = -1 or +1 (target labels)
 
----
+----
 
 # Gradient Descent
 
@@ -634,7 +634,7 @@ where:
 
 $$w^{(t+1)} = w^(t) + sum(\eta * x_i * t_i)$$
 
----
+----
 
 # Training Algorithm Components
 
@@ -653,7 +653,7 @@ $$w^{(t+1)} = w^(t) + sum(\eta * x_i * t_i)$$
 4. Update weights
 5. Repeat
 
----
+----
 
 # Python Implementation
 
@@ -678,7 +678,7 @@ def train(positive_examples, negative_examples,
     return weights
 ```
 
----
+----
 
 # Training Process Explained
 
@@ -692,7 +692,7 @@ def train(positive_examples, negative_examples,
    - If negative classified as positive: decrease weights
 5. **Iterate:** Repeat for num_iterations
 
----
+----
 
 # Learning Rate Selection
 
@@ -712,7 +712,7 @@ def train(positive_examples, negative_examples,
 
 **Typical Range:** 0.001 to 0.1
 
----
+----
 
 # Perceptron Limitations
 
@@ -731,7 +731,7 @@ def train(positive_examples, negative_examples,
 - No probabilistic outputs
 - Single layer architecture
 
----
+----
 
 # XOR Problem Illustration
 
@@ -748,7 +748,7 @@ def train(positive_examples, negative_examples,
 
 **Solution:** Multi-layer perceptron (MLP)
 
----
+----
 
 # When Perceptrons Work Well
 
@@ -767,7 +767,7 @@ def train(positive_examples, negative_examples,
 - Interpretable weights
 - Foundation for understanding deep learning
 
----
+----
 
 # From Perceptron to Modern Networks
 
@@ -780,7 +780,7 @@ def train(positive_examples, negative_examples,
 5. **2006:** Deep learning renaissance
 6. **2012+:** Modern deep neural networks
 
----
+----
 
 # Multi-Layer Perceptron (MLP)
 
@@ -797,7 +797,7 @@ def train(positive_examples, negative_examples,
 - One or more hidden layers
 - Output layer
 
----
+----
 
 # Practical Applications Today
 
@@ -815,7 +815,7 @@ def train(positive_examples, negative_examples,
    - Understanding neural network basics
    - Introduction to gradient descent
 
----
+----
 
 # Perceptron vs. Modern Networks
 
@@ -828,7 +828,7 @@ def train(positive_examples, negative_examples,
 | Speed | Very fast | Slower |
 | Applications | Limited | Universal |
 
----
+----
 
 # Key Takeaways - Perceptron
 
@@ -841,7 +841,7 @@ def train(positive_examples, negative_examples,
 5. Linear decision boundary limitation
 6. Foundation for modern deep learning
 
----
+----
 
 # Debugging Perceptron Training
 
@@ -857,7 +857,7 @@ def train(positive_examples, negative_examples,
   - Need feature engineering
   - Consider MLP instead
 
----
+----
 
 # Feature Engineering for Perceptrons
 
@@ -870,7 +870,7 @@ def train(positive_examples, negative_examples,
 
 **Goal:** Make data linearly separable
 
----
+----
 
 # Visualization Techniques
 
@@ -887,7 +887,7 @@ def train(positive_examples, negative_examples,
 - Seaborn for visualization
 - Interactive plots with Plotly
 
----
+----
 
 # Perceptron Convergence Theorem
 
@@ -905,7 +905,7 @@ If data is linearly separable:
 - Finite dataset
 - Proper learning rate
 
----
+----
 
 # Modern Variants
 
@@ -923,7 +923,7 @@ If data is linearly separable:
    - Non-linear decision boundaries
    - Kernel trick application
 
----
+----
 
 # Hands-On Machine Learning Workflow
 
@@ -938,7 +938,7 @@ If data is linearly separable:
 
 **Key Idea:** Practice the full ML loop, not only the model formula
 
----
+----
 
 # Train/Test Split and Reproducibility
 
@@ -954,7 +954,7 @@ If data is linearly separable:
 - `stratify` preserves class balance for classification
 - Test size controls how much data is held out
 
----
+----
 
 # Linear Regression: Diabetes Example
 
@@ -974,7 +974,7 @@ $$\hat{y} = w x + b$$
 - Compare actual values and predictions
 - Interpret prediction error visually
 
----
+----
 
 # Classification: Breast Cancer Example
 
@@ -992,7 +992,7 @@ $$\hat{y} = w x + b$$
 
 **Metric:** Accuracy = correct predictions / all predictions
 
----
+----
 
 # Explainable AI with SHAP
 
@@ -1009,7 +1009,7 @@ $$\hat{y} = w x + b$$
 - Negative values push prediction lower
 - Summary plots show global feature importance
 
----
+----
 
 # Hands-On Outputs
 
@@ -1026,7 +1026,7 @@ $$\hat{y} = w x + b$$
 - Interactive backends display figures with `plt.show()`
 - Headless backends such as `Agg` save figures to files
 
----
+----
 
 # Resources for Practice
 
@@ -1042,7 +1042,7 @@ $$\hat{y} = w x + b$$
 - Towards Data Science articles
 - Original Rosenblatt papers
 
----
+----
 
 # Summary and Conclusion
 
@@ -1059,7 +1059,7 @@ $$\hat{y} = w x + b$$
 - Backpropagation
 - Modern frameworks (PyTorch, TensorFlow)
 
----
+----
 
 # Final Thoughts
 
@@ -1077,4 +1077,4 @@ $$\hat{y} = w x + b$$
 - Start simple, scale complexity gradually
 
 **Continue Learning!**
----
+----

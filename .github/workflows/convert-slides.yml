@@ -32,10 +32,13 @@ jobs:
             found=1
             out="${md%.*}.pdf"
             echo "Converting: $md -> $out"
+            dir="$(dirname "$md")"
+            file="$(basename "$md")"
+            output="$(basename "$out")"
             # Try xelatex first (better font support), fallback to pdflatex
-            if ! pandoc "$md" -t beamer -V theme:Madrid -V colortheme:seagull --pdf-engine=xelatex -o "$out"; then
+            if ! (cd "$dir" && pandoc "$file" -t beamer -V theme:Madrid -V colortheme:seagull --pdf-engine=xelatex -o "$output"); then
               echo "xelatex failed, trying pdflatex"
-              pandoc "$md" -t beamer --pdf-engine=pdflatex -o "$out"
+              (cd "$dir" && pandoc "$file" -t beamer --pdf-engine=pdflatex -o "$output")
             fi
           done < <(find . -type f -name 'slides.md' -print0)
           if [ "$found" -eq 0 ]; then

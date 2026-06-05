@@ -11,7 +11,7 @@ colortheme: default
 
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
----
+----
 
 # What is Artificial Intelligence?
 
@@ -23,7 +23,7 @@ colortheme: default
 
 > We cannot explicitly explain how we determine age, nor can we program a computer to do it traditionally.
 
----
+----
 
 # Weak AI vs. Strong AI
 
@@ -37,7 +37,7 @@ colortheme: default
 - Can perform any intellectual task
 - Currently theoretical - not yet achieved
 
----
+----
 
 # Defining Intelligence
 
@@ -49,7 +49,7 @@ colortheme: default
 
 > Question: Is a cat intelligent? Different people give different answers!
 
----
+----
 
 # The Turing Test
 
@@ -65,7 +65,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Posed as 13-year-old Ukrainian boy  
 - Demonstrated cleverness, not true intelligence  
 
----
+----
 
 # Two Main Approaches to AI
 
@@ -83,7 +83,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Learns from training data
 - Similar to how babies learn
 
----
+----
 
 # Other Approaches
 
@@ -97,7 +97,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Optimization based on evolution principles
 - Genetic algorithms
 
----
+----
 
 # Brief History of AI
 
@@ -108,7 +108,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - **2010s:** Neural networks rise with big data
 - **Today:** AI mostly synonymous with neural networks
 
----
+----
 
 # Brief History of AI
 
@@ -117,7 +117,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - **2010s:** Neural networks rise with big data
 - **Today:** AI mostly synonymous with neural networks
 
----
+----
 
 # Evolution: Chess Programs
 
@@ -137,7 +137,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Reinforcement learning
 - Self-play and learning from mistakes
 
----
+----
 
 # Evolution: Conversational AI
 
@@ -149,7 +149,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 **Future:** Complete neural-based models (GPT, Turing-NLG)
 
----
+----
 
 # Recent AI Research (2012-2020)
 
@@ -162,7 +162,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Error rates dropped from 30% to 16.4%
 - 2015: Human-level accuracy achieved
 
----
+----
 
 # Human Parity Achievements
 
@@ -175,7 +175,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 **Recent Success:** Large language models (BERT, GPT-3)
 
----
+----
 
 
 # Knowledge Representation and Expert Systems
@@ -184,7 +184,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
----
+----
 
 # Key Takeaways
 
@@ -195,7 +195,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 5. AI has achieved human parity in multiple domains
 6. Large language models represent the cutting edge
 
----
+----
 
 # Challenge & Review
 
@@ -210,7 +210,7 @@ Proposed by Alan Turing as a test for machine intelligence:
 - Research cultural context of AI evolution
 - Complete the Game Jam assignment
 
----
+----
 
 # Resources
 
