@@ -349,6 +349,7 @@ Y = f(sum of Xi * Wi for all i)
 - NumPy, Matplotlib
 
 ----
+
 # From Perceptron to Deep Learning
 
 **Evolution of Neural Networks:**
