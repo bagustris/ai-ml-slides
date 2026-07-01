@@ -16,19 +16,14 @@ The repository includes slides and accompanying images for the following topics:
   - The Turing Test
   - Brief History of AI
 
-- **Lesson 2: Symbolic AI** (`lessons/2-Symbolic/`)
-  - Knowledge Representation
-  - Expert Systems
-  - Semantic Networks and Ontologies
-
-- **Lesson 3: Neural Networks** (`lessons/3-NeuralNetworks/`)
+- **Lesson 2: Neural Networks** (`lessons/3-NeuralNetworks/`)
   - Introduction to Neural Networks
   - Perceptron
   - Overfitting and Regularization
 
-- **Lesson 4: AI for Healthcare and Wellbeing**
+- **Lesson 3: AI for Healthcare and Wellbeing**
 
-- **Lesson 5: Hands On**  
+- **Lesson 4: Hands On**  
 
 ## Using the Slides
 
